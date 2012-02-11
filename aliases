@@ -10,10 +10,15 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
+alias cls='clear; ls'
+
+# tmux
+alias tmux="TERM=xterm-256color tmux"
 
 # git
 alias g="git"
 alias gci="git pull --rebase && rake && git push"
+alias glog="git log --oneline --decorate --graph"
 
 # Ruby
 alias help-strftime='ruby ~/bin/help-strftime.rb'
