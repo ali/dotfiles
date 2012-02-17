@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ali/.vim'
+let g:netrw_dirhist_2='/Users/ali/Code/kolb/config'
+let g:netrw_dirhist_3='/Users/ali/Code/gitlabhq/config'
+let g:netrw_dirhist_4='/Users/ali/Code/kolb/config'
+let g:netrw_dirhist_5='/Users/ali/Code/kolb/lib/kolb'
