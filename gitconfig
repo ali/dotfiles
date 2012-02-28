@@ -1,8 +1,10 @@
 [user]
-	name = Ali Ukani
-	email = ali.ukani@gmail.com
+  name = Ali Ukani
+  email = ali.ukani@gmail.com
 
 [push]
   default = tracking
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[alias]
+  unstage = reset HEAD
