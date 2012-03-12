@@ -13,6 +13,7 @@ set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
+set tw=70
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -56,7 +57,7 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme ir_black 
+colorscheme ir_black
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
