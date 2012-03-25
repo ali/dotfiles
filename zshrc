@@ -6,6 +6,9 @@ fi
 #functions
 export PATH=$PATH:~/bin
 
+# python
+export PYTHONPATH=~/lib/python2.6/site-packages
+
 # prompt
 export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 
@@ -49,3 +52,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# mkdir, cd into it
+mkcd () {
+  mkdir -p "$*"
+  cd "$*"
+}
+
