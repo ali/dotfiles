@@ -19,3 +19,8 @@ setopt prompt_subst
 # prompt
 export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
+if [ -s "$HOME/.rvm/scripts/rvm" ] ; then
+  . "$HOME/.rvm/scripts/rvm"
+elif [ -s "/usr/local/rvm/scripts/rvm" ] ; then
+  . "/usr/local/rvm/scripts/rvm"
+fi

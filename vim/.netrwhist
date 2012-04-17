@@ -1,11 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/ali/.vim'
-let g:netrw_dirhist_2='/Users/ali/Code/kolb/config'
-let g:netrw_dirhist_3='/Users/ali/Code/gitlabhq/config'
-let g:netrw_dirhist_4='/Users/ali/Code/kolb/config'
-let g:netrw_dirhist_5='/Users/ali/Code/kolb/lib/kolb'
-let g:netrw_dirhist_6='/Users/ali/Code/github/cardslap/app/controllers'
-let g:netrw_dirhist_7='/Users/ali/work/2800/current/logicandcomputation/Staff/aliukani'
-let g:netrw_dirhist_8='/Users/ali/Documents/co-op'
-let g:netrw_dirhist_9='/Users/ali/work/2800/homeworks/5/05/chris11-rysull/Hw5/grade'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/ali/Dropbox/School/12 Spring/Computer Organization (CS 2600)/Assignments/3/myshell.dSYM'
+let g:netrw_dirhist_2='/Users/ali/work/2800/homeworks'
+let g:netrw_dirhist_3='/Users/ali/work/2800/homeworks/11'
+let g:netrw_dirhist_4='/Users/ali/Code/cs2800-leaderboard/svn/logicandcomputation/Staff/aliukani'
