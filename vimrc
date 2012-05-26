@@ -1,3 +1,7 @@
+" Load Pathogen
+call pathogen#infect()
+
+" Settings
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
 set nowritebackup
@@ -91,5 +95,3 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-" Load Pathogen
-call pathogen#infect()
