@@ -4,7 +4,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 #functions
-export PATH=$PATH:~/bin
+export PATH=~/bin:$PATH
 
 # python
 export PYTHONPATH=~/lib/python2.6/site-packages
@@ -23,7 +23,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
