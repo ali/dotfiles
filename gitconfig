@@ -8,3 +8,5 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [alias]
   unstage = reset HEAD
+[core]
+  excludesfile = /Users/ali/.gitignore_global
