@@ -4,7 +4,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 #functions
-export PATH=~/bin:$PATH
+export PATH=~/bin:/usr/bin:$PATH
 
 # python
 export PYTHONPATH=~/lib/python2.6/site-packages
@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # mkdir, cd into it
 mkcd () {
