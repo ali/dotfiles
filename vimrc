@@ -61,6 +61,7 @@ if executable("ack")
 endif
 
 " Color scheme
+set t_Co=256            " Explicitly force 256-color capability
 colorscheme molokai
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
@@ -95,3 +96,6 @@ nnoremap <Down> :echoe "Use j"<CR>
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" Open a NERDTree automatically when vim starts up if no files were
+" specified
+autocmd vimenter * if !argc() | NERDTree | endif
