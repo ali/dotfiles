@@ -99,3 +99,6 @@ let g:html_indent_tags = 'li\|p'
 " Open a NERDTree automatically when vim starts up if no files were
 " specified
 autocmd vimenter * if !argc() | NERDTree | endif
+
+" Use fancy symbols for Powerline
+let g:Powerline_symbols = 'fancy'
