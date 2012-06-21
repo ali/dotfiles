@@ -1,10 +1,20 @@
+# completion
+autoload -U compinit
+compinit
+
+# automatically enter directories without cd
+setopt auto_cd
+
+# expand functions in the prompt
+setopt prompt_subst
+
 #aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
 #functions
-export PATH=~/bin:/usr/bin:$PATH
+export PATH=~/bin:/usr/local/bin:$PATH
 
 # python
 export PYTHONPATH=~/lib/python2.6/site-packages
@@ -15,6 +25,8 @@ export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# Set 256 Colors
+export TERM='xterm-256color'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -23,7 +35,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
@@ -44,7 +56,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github osx rails ruby)
+plugins=(git github osx rails ruby brew)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,4 +69,3 @@ mkcd () {
   mkdir -p "$*"
   cd "$*"
 }
-
