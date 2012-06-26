@@ -62,6 +62,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export NODE_PATH="/usr/local/lib/node"
+export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # mkdir, cd into it

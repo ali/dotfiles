@@ -24,5 +24,3 @@ if [ -s "$HOME/.rvm/scripts/rvm" ] ; then
 elif [ -s "/usr/local/rvm/scripts/rvm" ] ; then
   . "/usr/local/rvm/scripts/rvm"
 fi
-
-export NODE_PATH="/usr/local/lib/node_modules"
