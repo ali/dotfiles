@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/ali/Dropbox/School/12 Spring/Computer Organization (CS 2600)/Assignments/3/myshell.dSYM'
-let g:netrw_dirhist_2='/Users/ali/work/2800/homeworks'
-let g:netrw_dirhist_3='/Users/ali/work/2800/homeworks/11'
-let g:netrw_dirhist_4='/Users/ali/Code/cs2800-leaderboard/svn/logicandcomputation/Staff/aliukani'
-let g:netrw_dirhist_5='/Users/ali/Code/cs2800-leaderboard/.git'
-let g:netrw_dirhist_6='/Users/ali/.ssh'
