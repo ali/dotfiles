@@ -14,10 +14,7 @@ if [ -e "$HOME/.aliases" ]; then
 fi
 
 #functions
-export PATH=~/bin:/usr/local/bin:$PATH
-
-# python
-export PYTHONPATH=~/lib/python2.6/site-packages
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # prompt
 export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
@@ -64,7 +61,6 @@ source $ZSH/oh-my-zsh.sh
 
 export NODE_PATH="/usr/local/lib/node"
 export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # mkdir, cd into it
 mkcd () {
