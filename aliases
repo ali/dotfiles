@@ -10,7 +10,7 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
-alias cls='clear; ls'
+alias cls='clear; echo "`pwd`:"; ls'
 
 # tmux
 alias tmux="TERM=xterm-256color tmux"
@@ -29,6 +29,7 @@ alias be="bundle exec"
 alias bake="bundle exec rake"
 alias s="bundle exec rspec"
 alias cuc="bundle exec cucumber"
+alias bard="bundle exec guard"
 
 # Rubygems
 alias gi="gem install"
@@ -59,3 +60,6 @@ alias db-backup-production='heroku pgbackups:capture --remote production'
 
 # Connect to Zerowing and attach to screen
 alias irc='ssh -t ccs screen -dr'
+
+# VLC
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
