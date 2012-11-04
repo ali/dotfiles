@@ -63,3 +63,6 @@ alias irc='ssh -t ccs screen -dr'
 
 # VLC
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+
+# Fix sudo "correcting" vim to .vim
+alias sudo='nocorrect sudo'
