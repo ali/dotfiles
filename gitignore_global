@@ -1,5 +1,4 @@
 # OS X
-
 .DS_Store
 
 # Thumbnails
@@ -18,3 +17,6 @@ Session.vim
 # SublimeText project files
 /*.sublime-project
 *.sublime-workspace
+
+# SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
