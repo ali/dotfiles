@@ -10,6 +10,7 @@
 
 [alias]
   unstage = reset HEAD
+  status  = status -s
 
 [core]
   excludesfile = /Users/ali/.gitignore_global
