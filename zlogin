@@ -17,6 +17,3 @@ export CLICOLOR=1
 setopt prompt_subst
 
 export PATH="/usr/local/bin:/usr/local/share/python:${PATH}"
-
-# prompt
-export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '

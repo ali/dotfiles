@@ -16,11 +16,8 @@ fi
 #functions
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# Racket command line tools
-export PATH="$PATH:/Applications/Racket\ v5.3.1/bin"
-
 # prompt
-export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
+export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
