@@ -16,14 +16,10 @@ fi
 #functions
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# prompt
 export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-
-# Set 256 Colors
-export TERM='xterm-256color'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -60,10 +56,18 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export NODE_PATH="/usr/local/lib/node"
-export PATH="/usr/local/share/npm/bin:$PATH"
+export CABAL_PATH="~/.cabal/bin"
+export PATH="/usr/local/share/npm/bin:$CABAL_PATH:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 
 # mkdir, cd into it
 mkcd () {
   mkdir -p "$*"
   cd "$*"
 }
+
+echo "Loaded .zshrc"
