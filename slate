@@ -1,0 +1,31 @@
+# My slate configs
+# Mostly borrowed from thume.ca:
+#   http://thume.ca/howto/2012/11/19/using-slate/#configuration
+
+config defaultToCurrentScreen true
+# Shows app icons and background apps, spreads icons in the same place.
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # Show window hints
+
+# Show a 6x3 grid on monitor 0 and an 8x3 on monitor 1
+bind g:cmd grid padding:5 0:6,2 1:8,3
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+alias hyper ctrl;cmd;space
+
+# Location bindings
+bind h:${hyper} ${lefthalf}
+bind f:${hyper} ${full}
+bind l:${hyper} ${righthalf}
+bind n:${hyper} throw next
