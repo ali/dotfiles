@@ -11,6 +11,7 @@ set showcmd       " display incomplete commands
 set laststatus=2  " Always display the status line
 set backspace=2   " Let backspace kill newlines
 set cursorline
+set encoding=utf-8
 
 " Searches
 set hlsearch             " highlight search results

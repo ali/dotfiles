@@ -1,5 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
 
+export EDITOR=$(which vim)
+
 unsetopt correct_all
 unsetopt sharehistory
 
