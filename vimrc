@@ -1,6 +1,3 @@
-" Load Pathogen
-call pathogen#infect()
-
 " Settings
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
@@ -12,6 +9,18 @@ set laststatus=2  " Always display the status line
 set backspace=2   " Let backspace kill newlines
 set cursorline
 set encoding=utf-8
+let mapleader=","
+set clipboard=unnamed
+
+" Vundle
+filetype on
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 " Searches
 set hlsearch             " highlight search results
