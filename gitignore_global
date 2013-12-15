@@ -1,0 +1,22 @@
+# OS X
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# SublimeText project files
+/*.sublime-project
+*.sublime-workspace
+
+# SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache

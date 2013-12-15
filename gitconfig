@@ -1,0 +1,26 @@
+[user]
+  name = Ali Ukani
+  email = ali.ukani@gmail.com
+
+[push]
+  default = tracking
+
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+
+[alias]
+  unstage = reset HEAD
+  status  = status -s
+
+[core]
+  excludesfile = /Users/ali/.gitignore_global
+	editor = vim
+
+[color]
+  status = auto
+  branch = auto
+  all = auto
+  diff = auto
+  interactive = auto
+[credential]
+	helper = osxkeychain
