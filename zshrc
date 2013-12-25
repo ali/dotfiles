@@ -23,6 +23,8 @@ __git_files () {
 
 . `brew --prefix`/etc/profile.d/z.sh
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # adds the current branch name in green
 git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
