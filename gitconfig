@@ -22,5 +22,3 @@
   all = auto
   diff = auto
   interactive = auto
-[credential]
-	helper = osxkeychain
