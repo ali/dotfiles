@@ -10,7 +10,6 @@ set backspace=2   " Let backspace kill newlines
 set cursorline
 set encoding=utf-8
 let mapleader=","
-set clipboard=unnamed
 
 " Vundle
 filetype on
