@@ -9,13 +9,14 @@ plugins=(git tmux brew node)
 
 source $ZSH/oh-my-zsh.sh
 
-if [[ -e ~/.zshrc.local ]]; then
-  source ~/.zshrc.local
-fi
+# Source that fails silently
+ssource() {
+  source $1 2> /dev/null
+}
 
-if [[ -e ~/.aliases ]]; then
-  source ~/.aliases
-fi
+ssource ~/.zshrc.local
+ssource ~/.aliases
+ssource ~/.aliases.local
 
 __git_files () {
   _wanted files expl 'local files' _files
