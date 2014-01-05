@@ -9,7 +9,6 @@ set laststatus=2  " Always display the status line
 set backspace=2   " Let backspace kill newlines
 set cursorline
 set encoding=utf-8
-let mapleader=","
 
 " Vundle
 filetype on
@@ -39,6 +38,7 @@ set tw=70
 syntax on
 set t_Co=256
 let g:hybrid_use_Xresources = 1
+let g:hybrid_use_iTermColors = 1
 set background=dark
 colorscheme hybrid
 
@@ -72,10 +72,19 @@ set wildmode=list:longest,list:full
 set complete=.,w,t
 
 " Get off my lawn
+let mapleader = ','
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <leader>l :Align
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
@@ -87,6 +96,3 @@ augroup myvimrc
   au!
   au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
-
-" vim-airline
-let g:airline_powerline_fonts = 1
