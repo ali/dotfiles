@@ -5,8 +5,6 @@ export EDITOR=$(which vim)
 unsetopt correct_all
 unsetopt sharehistory
 
-plugins=(git tmux brew node)
-
 source $ZSH/oh-my-zsh.sh
 
 # Source that fails silently
@@ -21,8 +19,6 @@ ssource ~/.aliases.local
 __git_files () {
   _wanted files expl 'local files' _files
 }
-
-. `brew --prefix`/etc/profile.d/z.sh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
