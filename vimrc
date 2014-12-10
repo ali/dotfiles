@@ -13,19 +13,20 @@ set encoding=utf-8
 " Vundle
 filetype on
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
+set rtp+=~/.vim/bundle/Vundle.vim
 if filereadable(expand("~/.vimrc.bundles"))
+  call vundle#begin()
   source ~/.vimrc.bundles
+  call vundle#end()
 endif
+filetype plugin indent on
 
 " Searches
 set hlsearch             " highlight search results
 set incsearch            " search whilst typing
 set ignorecase           " case insensitive searching
 set smartcase            " override ignorecase if upper case typed
- 
+
 " Line wrapping
 set wrap
 set linebreak
@@ -36,11 +37,13 @@ set tw=70
 
 " Colorscheme stuff
 syntax on
+set term=screen-256color
+let base16colorspace=256
 set t_Co=256
-let g:hybrid_use_Xresources = 1
-let g:hybrid_use_iTermColors = 1
 set background=dark
-colorscheme hybrid
+let base16colorspace=256        " Access colors present in 256 colorspace
+colorscheme base16-ocean
+set nofoldenable                " disable code folding
 
 filetype plugin indent on
 
@@ -65,7 +68,7 @@ endif
 " Numbers
 set number
 set numberwidth=5
-hi LineNr ctermfg=grey
+"hi LineNr ctermfg=white
 
 " Tab completion options
 set wildmode=list:longest,list:full
@@ -96,3 +99,9 @@ augroup myvimrc
   au!
   au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
+
+" NERDTree ignore
+let NERDTreeIgnore = ['\.pyc$']
+
+" Litcoffee support
+autocmd FileType litcoffee runtime ftplugin/coffee.vim

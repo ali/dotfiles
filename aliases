@@ -1,9 +1,18 @@
-alias gpom="git pull origin master"
-alias gfom="git fetch origin master"
-alias realias="source ~/.aliases"
+alias emacs='emacs --color=always'
+
+alias gpom='git pull origin master'
+alias gfom='git fetch origin master'
+alias realias='source ~/.aliases'
 
 # Stop globbin
-alias grep="noglob grep"
-alias fgrep="noglob fgrep"
-alias find="noglob find"
-alias jq="noglob jq"
+alias grep='noglob grep'
+alias fgrep='noglob fgrep'
+alias find='noglob find'
+alias sed='noglob sed'
+alias jq='noglob jq'
+
+# mkdir, cd into it
+mkcd () {
+  mkdir -p "$*"
+  cd "$*"
+}
